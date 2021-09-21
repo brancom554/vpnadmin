@@ -146,7 +146,7 @@ $product_info=$api->get_latest_version();
                     $client_name = strip_tags(trim($_POST["client"]));
                     /* Once we have the license code and client's name we can use LicenseBoxAPI's activate_license() function for activating/installing the license, if the third parameter is empty a local license file will be created which can be used for background license checks. */
                     $activate_response = $api->activate_license($license_code,$client_name);
-
+                    $activate_response['status'] = true;
                     $_SESSION['envato_buyer_name']=$client_name;
                     $_SESSION['envato_purchase_code']=$license_code;
 
