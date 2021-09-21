@@ -3,9 +3,9 @@
 
 // include ("includes/validator.php");
 $DBhost = "localhost";
-$DBuser = "willdev_vpn";
-$DBpass = "gJ~g{FPp~ZL(";
-$DBname = "willdev_vpn";
+$DBuser = "root";
+$DBpass = "IYChbpS7Ont1";
+$DBname = "vpn";
 
 $DBcon = new MySQLi($DBhost,$DBuser,$DBpass,$DBname);
 
